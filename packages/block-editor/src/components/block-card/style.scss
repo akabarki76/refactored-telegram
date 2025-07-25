@@ -1,0 +1,37 @@
+.block-editor-block-card {
+	align-items: flex-start;
+	color: $gray-900;
+	display: flex;
+	padding: $grid-unit-20;
+}
+
+.block-editor-block-card__title {
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: calc($grid-unit-10 / 2) $grid-unit-10;
+
+	&.block-editor-block-card__title {
+		font-size: $default-font-size;
+		line-height: $default-line-height;
+		margin: 0;
+	}
+}
+
+.block-editor-block-card__name {
+	padding: 3px 0; // This makes the title as high as the icon.
+}
+
+.block-editor-block-card .block-editor-block-icon {
+	flex: 0 0 $button-size-small;
+	margin-left: 0;
+	margin-right: $grid-unit-15;
+	width: $button-size-small;
+	height: $button-size-small;
+}
+
+.block-editor-block-card.is-synced .block-editor-block-icon {
+	color: var(--wp-block-synced-color);
+}
+

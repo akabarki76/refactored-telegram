@@ -1,0 +1,11 @@
+@import "./components/import-dropdown/style.scss";
+@import "./components/import-form/style.scss";
+
+.list-reusable-blocks__container {
+	display: inline-flex;
+	align-items: center;
+	position: relative;
+	top: -3px;
+}
+
+@include wordpress-admin-schemes();
